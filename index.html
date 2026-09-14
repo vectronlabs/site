@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Tech Ecosystem | Next-Gen AI & Tools</title>
+    <style>
+        /* Modern Dark Theme Variables */
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #151c2c;
+            --accent-blue: #00d2ff;
+            --accent-purple: #9d4edd;
+            --text-color: #e2e8f0;
+            --text-muted: #94a3b8;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header / Navbar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(11, 15, 25, 0.8);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* Hero Banner Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 60px 8% 40px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #ffffff, var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin-bottom: 40px;
+        }
+
+        .hero-banner-img {
+            width: 100%;
+            max-width: 1100px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 210, 255, 0.2);
+            border: 1px solid rgba(0, 210, 255, 0.3);
+            object-fit: cover;
+        }
+
+        /* Section Container */
+        .container {
+            padding: 80px 8%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Our Aim Section */
+        .aim-section {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 50px;
+            margin: 60px 0;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .aim-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--accent-blue), var(--accent-purple));
+        }
+
+        .aim-section h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .aim-section p {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        /* Features / Offerings Grid */
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-blue);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .aim-section {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">FutureTech</div>
+        <nav>
+            <a href="#aim">Our Aim</a>
+            <a href="#features">What We Offer</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Next-Gen Technology, Completely Free</h1>
+        <p>Empowering everyone with open-access AI tools, autonomous agents, and futuristic software ecosystems.</p>
+        
+        <!-- Collage Image Display -->
+        <img src="input_file_0.png" alt="AI Apps and OS Future Tech Collage" class="hero-banner-img">
+    </section>
+
+    <div class="container">
+        <!-- Our Aim Section -->
+        <section id="aim" class="aim-section">
+            <h2>Our Aim</h2>
+            <p>
+                At our core, we believe high-quality technology should be accessible to everyone, not locked behind expensive paywalls or subscription traps. While many companies restrict powerful tools for profit, our mission is to empower creators, developers, and everyday users by providing top-tier AI models, autonomous AI agents, custom operating system tools, and modern software completely for free. We are dedicated to building an open ecosystem where innovation, transparency, and community drive progress forward—giving you the ultimate tech stack without the price tag.
+            </p>
+        </section>
+
+        <!-- Features / Offerings Section -->
+        <section id="features">
+            <h2 class="section-title">What We Provide</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">🤖</div>
+                    <h3>Free AI Tools</h3>
+                    <p>Cutting-edge artificial intelligence models tailored for text generation, image creation, and data processing without usage limits.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Autonomous AI Agents</h3>
+                    <p>Smart agents that automate your daily tasks, streamline code writing, and manage workflows without costly subscriptions.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <h3>Custom OS Tools</h3>
+                    <p>Lightweight operating system utilities and open-source software built to optimize speed, security, and performance.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Future Technology</h3>
+                    <p>Early access to experimental tech projects, quantum concepts, and novel applications engineered for tomorrow.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2026 FutureTech. Empowering the world with open, free technology for all.</p>
+    </footer>
+
+</body>
+</html>
